@@ -9,5 +9,9 @@ function tamgiac(dong){
         console.log(s)
     }
 }
-
+function vehinh(soDong){
+    let s= ''
+    for(let i=1;i<=soDong;i++) console.log(s+='*')
+}
 tamgiac(10)
+vehinh(6)

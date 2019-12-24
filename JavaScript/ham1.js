@@ -17,4 +17,7 @@ inso(function(i){
 })
 //arrow 
 inso(i=> Math.sqrt(i)%1===0) // viet tren 1 hang thuong it dung 
+
+const kiemtra = i=>i%100===0
+console.log(kiemtra(100))
 inso(i=> i%10==0)

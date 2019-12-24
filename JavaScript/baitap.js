@@ -56,17 +56,30 @@
 
 function kiemtrachiahetcho2(i)
 {
-    if(i%2)
-        return true;
-    else
-        return false;
+    return (i%2===0);
 }
 
 function inso(check_number)
 {
     for(let i=1;i<=100;i++){
-        if(check_number)
+        if(check_number(i))
             console.log(i);
     }
 }
+// inso(kiemtrachiahetcho2)
+//viet thang function 
+inso(function(i){
+    if(i%5==0)
+        return true;
+    else
+        return false;}
+)
+
+inso(function(i){
+    return (i%1===0);
+})
+
+//arrow
+inso(i=> Math.sqrt(i)%1===0)
+
 inso(kiemtrachiahetcho2)
